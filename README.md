@@ -1,8 +1,11 @@
 
-GSTMagazin est une application web complète conçue pour rationaliser et améliorer la gestion des magasins de détail. Que vous exploitiez une petite boutique ou une grande chaîne de magasins, GSTMagazin offre des outils intuitifs pour simplifier les opérations quotidiennes et augmenter la productivité.
+GSTMagazin est une application web complète conçue pour rationaliser et améliorer la gestion des magasins de détail. Que vous exploitiez une petite boutique ou une grande chaîne de magasins, GSTMagazin offre des outils intuitifs pour simplifier les opérations quotidiennes et augmenter la productivité.  
 
-Note : Ceci est personnalisé en fonction de la demande du client, sans gestion des vendeurs et des commandes. Le magasinier fait ce que le vendeur devrait faire.
-Technologies Utilisées :
+
+Note : Ceci est personnalisé en fonction de la demande du client, sans gestion des vendeurs et des commandes. Le magasinier fait ce que le vendeur devrait faire.  
+
+Technologies Utilisées :  
+
 ASP.NET Core MVC
 Entity Framework Core (SQL Server)
 Chart.js
