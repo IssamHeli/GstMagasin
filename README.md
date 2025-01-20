@@ -25,28 +25,28 @@ Visitez le site web ici : https://gstmag.azurewebsites.net/
 
 -----------
 
-## Stock Page
+## Page de Stock
 ![Stock Page](screnshots/Stock.png)
 
-## Stock with Search
+## Stock avec Recherche
 ![Stock with Search](screnshots/StockAvecChercherPar.png)
 
-## Stock with Actions
+## Stock avec Actions
 ![Stock with Actions](screnshots/StockwithActions.png)
 
-## Analysis Page
+## Page d'Analyse
 ![Analysis Page](screnshots/Analyse.png)
 
-## Analysis with Filter Options
+## Analyse avec Options de Filtrage
 ![Analysis with Filter Options](screnshots/AnalyseFiltrageoptions.png)
 
-## Purchase Plans
+## Plan des Achats
 ![Purchase Plans](screnshots/PlansAchats.png)
 
-## Sales Plans
+## Plan des Ventes
 ![Sales Plans](screnshots/plansventes.png)
 
-## LesArticles
+## Les Articles
 ![The Articles](screnshots/LesArticles.png)
 
 --------
