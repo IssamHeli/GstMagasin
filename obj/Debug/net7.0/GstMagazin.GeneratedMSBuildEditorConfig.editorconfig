@@ -9,401 +9,405 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GstMagazin
 build_property.RootNamespace = GstMagazin
-build_property.ProjectDir = /Users/macgr/Desktop/gstmagasin/
+build_property.ProjectDir = /Users/macgr/Desktop/GstMagazin/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /Users/macgr/Desktop/gstmagasin
+build_property.MSBuildProjectDirectory = /Users/macgr/Desktop/GstMagazin
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 7.0
+build_property.EnableCodeStyleSeverity = 
 
-[/Users/macgr/Desktop/gstmagasin/Pages/_ValidationScriptsPartial.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Editforacheteur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Editforacheteur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvRWRpdGZvcmFjaGV0ZXVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/Indexacheteur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/Indexacheteur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvSW5kZXhhY2hldGV1ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Acheteur/loginAcheteur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Acheteur/loginAcheteur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNoZXRldXIvbG9naW5BY2hldGV1ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Categorie/Chercherpardesignation.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Categorie/Chercherpardesignation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0NoZXJjaGVycGFyZGVzaWduYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Categorie/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Categorie/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Categorie/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Categorie/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Categorie/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Categorie/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Categorie/index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Categorie/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Directeur/loginDirecteur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Directeur/loginDirecteur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlyZWN0ZXVyL2xvZ2luRGlyZWN0ZXVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Fournisseur/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Fournisseur/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm91cm5pc3NldXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Fournisseur/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Fournisseur/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm91cm5pc3NldXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Fournisseur/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Fournisseur/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm91cm5pc3NldXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Fournisseur/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Fournisseur/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm91cm5pc3NldXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Fournisseur/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Fournisseur/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm91cm5pc3NldXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Home/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/LieuStock/Chercherpardesignation.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/LieuStock/Chercherpardesignation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlldVN0b2NrL0NoZXJjaGVycGFyZGVzaWduYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/LieuStock/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/LieuStock/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlldVN0b2NrL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/LieuStock/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/LieuStock/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlldVN0b2NrL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/LieuStock/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/LieuStock/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlldVN0b2NrL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/LieuStock/index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/LieuStock/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlldVN0b2NrL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/filterParAnne.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/filterParAnne.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9maWx0ZXJQYXJBbm5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/filterParJour.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/filterParJour.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9maWx0ZXJQYXJKb3VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/filterParMonth.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/filterParMonth.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9maWx0ZXJQYXJNb250aC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/LastWeek.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/LastWeek.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9MYXN0V2Vlay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/ThisDay.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/ThisDay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi9UaGlzRGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/thismonth.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/thismonth.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi90aGlzbW9udGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Magasin/thisyear.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Magasin/thisyear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXNpbi90aGlzeWVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Chercherdateachat.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Chercherdateachat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0NoZXJjaGVyZGF0ZWFjaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Chercherproduitnom.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Chercherproduitnom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0NoZXJjaGVycHJvZHVpdG5vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/ChercherproduitReference.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/ChercherproduitReference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0NoZXJjaGVycHJvZHVpdFJlZmVyZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanAchat/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanAchat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbkFjaGF0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Chercherdatevondre.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Chercherdatevondre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcmRhdGV2b25kcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Chercherdatevondre1.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Chercherdatevondre1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcmRhdGV2b25kcmUxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Chercherproduitnom.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Chercherproduitnom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcnByb2R1aXRub20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Chercherproduitnom1.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Chercherproduitnom1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcnByb2R1aXRub20xLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/ChercherproduitReference.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/ChercherproduitReference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcnByb2R1aXRSZWZlcmVuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/ChercherproduitReference1.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/ChercherproduitReference1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9DaGVyY2hlcnByb2R1aXRSZWZlcmVuY2UxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/EditPlanVenteforVendeur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/EditPlanVenteforVendeur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9FZGl0UGxhblZlbnRlZm9yVmVuZGV1ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/PlanVondre/IndexForVendeur.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/PlanVondre/IndexForVendeur.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhblZvbmRyZS9JbmRleEZvclZlbmRldXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/acheter.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/acheter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9hY2hldGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/AjouterQnt.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/AjouterQnt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9Bam91dGVyUW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Analyse.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Analyse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9BbmFseXNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/ChercherCategorie.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/ChercherCategorie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DaGVyY2hlckNhdGVnb3JpZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/ChercherLieuStock.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/ChercherLieuStock.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DaGVyY2hlckxpZXVTdG9jay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/ChercherNom.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/ChercherNom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DaGVyY2hlck5vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Chercherquantite.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Chercherquantite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DaGVyY2hlcnF1YW50aXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/ChercherReference.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/ChercherReference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DaGVyY2hlclJlZmVyZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/ExportProduits.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/ExportProduits.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9FeHBvcnRQcm9kdWl0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Produit/Vondre.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Produit/Vondre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdC9Wb25kcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/AjouterQnt.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/AjouterQnt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0Fqb3V0ZXJRbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/ChercherCategorie.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/ChercherCategorie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NoZXJjaGVyQ2F0ZWdvcmllLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/ChercherLieuStock.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/ChercherLieuStock.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NoZXJjaGVyTGlldVN0b2NrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/ChercherNom.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/ChercherNom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NoZXJjaGVyTm9tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Chercherquantite.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Chercherquantite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NoZXJjaGVycXVhbnRpdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/ChercherReference.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/ChercherReference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NoZXJjaGVyUmVmZXJlbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Details.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/ExportProduits.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/ExportProduits.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0V4cG9ydFByb2R1aXRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAcheteur/Vondre.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAcheteur/Vondre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFjaGV0ZXVyL1ZvbmRyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/ChercherCategorie.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/ChercherCategorie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvQ2hlcmNoZXJDYXRlZ29yaWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/ChercherNom.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/ChercherNom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvQ2hlcmNoZXJOb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/ChercherReference.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/ChercherReference.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvQ2hlcmNoZXJSZWZlcmVuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/Create.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/delete.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvZGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/Edit.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/ProduitAffiche/Index.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/ProduitAffiche/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVpdEFmZmljaGUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Shared/Error.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/_ViewImports.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/_ViewStart.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/macgr/Desktop/gstmagasin/Views/Shared/_Layout.cshtml]
+[/Users/macgr/Desktop/GstMagazin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0iec31jqae

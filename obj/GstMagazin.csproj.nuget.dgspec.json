@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macgr/Desktop/gstmagasin/GstMagazin.csproj": {}
+    "/Users/macgr/Desktop/GstMagazin/GstMagazin.csproj": {}
   },
   "projects": {
-    "/Users/macgr/Desktop/gstmagasin/GstMagazin.csproj": {
+    "/Users/macgr/Desktop/GstMagazin/GstMagazin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macgr/Desktop/gstmagasin/GstMagazin.csproj",
+        "projectUniqueName": "/Users/macgr/Desktop/GstMagazin/GstMagazin.csproj",
         "projectName": "GstMagazin",
-        "projectPath": "/Users/macgr/Desktop/gstmagasin/GstMagazin.csproj",
+        "projectPath": "/Users/macgr/Desktop/GstMagazin/GstMagazin.csproj",
         "packagesPath": "/Users/macgr/.nuget/packages/",
-        "outputPath": "/Users/macgr/Desktop/gstmagasin/obj/",
+        "outputPath": "/Users/macgr/Desktop/GstMagazin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macgr/.nuget/NuGet/NuGet.Config"
@@ -21,7 +21,6 @@
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,7 +33,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -98,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

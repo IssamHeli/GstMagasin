@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GstMagazin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eb40ea48b6ab2836f5e7cff4abe132748651ded")]
 [assembly: System.Reflection.AssemblyProductAttribute("GstMagazin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GstMagazin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
