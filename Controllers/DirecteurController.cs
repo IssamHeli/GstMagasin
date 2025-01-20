@@ -38,7 +38,7 @@ namespace GstMagazin.Controllers
         public async Task<string> validaterecapatcha(string token)
         {
 
-            var secretKey = "6LeGeqgqAAAAAKNy_IBNeoflMqmcSiE0cVbKCZsk";
+            var secretKey = "your secretKey";
             var client = new HttpClient();
             var result = await client.PostAsync("https://www.google.com/recaptcha/api/siteverify", new FormUrlEncodedContent(new[]
             {
