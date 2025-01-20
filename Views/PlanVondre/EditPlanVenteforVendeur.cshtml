@@ -1,0 +1,122 @@
+﻿@model TestHostAppAndBaseDonnes.Models.PlanVondre
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="ProduitVondoure" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAcheteur" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active" asp-area="" asp-controller="PlanVondre" asp-action="IndexForVendeur"><samp>PlanVentes</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Acheteur" asp-action="IndexAcheteur"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Acheteur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+        @if (ViewBag.Vouspouverpas != null)
+        {
+            <div class="alert alert-danger">
+                <h3>
+                    <i class="fa-solid fa-circle-exclamation fa-lg" style="color: #e32400;"></i>
+                    <samp class="text-danger">@ViewBag.Vouspouverpas</samp>
+                </h3>
+            </div>
+
+        }
+        <div class="alert alert-secondary">
+                <h1><samp class="text-secondary">Modifier Le Plan de Vente</samp></h1>
+            </div>
+            <h3>Plan Vente Selectionner</h3>
+            <hr />
+            <div class="inputField">
+                <h4><samp>Information :</samp></h4>
+                <form asp-action="EditPlanVenteforVendeur">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="id" />
+                    <label asp-for="Produitid" class="control-label" hidden></label>
+                    <select asp-for="Produitid" class="form-control" asp-items="ViewBag.ProduitId" hidden></select>
+                    <span asp-validation-for="Produitid" class="text-danger"></span>
+
+                     <label class="control-label"> Reference </label>
+                    <input asp-for="Reference" class="form-control" readonly />
+
+                    <label class="control-label"> produit Nom</label>
+                    <input value="@ViewBag.Produitnom" class="form-control" readonly />
+
+                    <label class="control-label">Quantitié Vente</label>
+                    <input asp-for="Qnt_vondre" class="form-control" />
+                    <span asp-validation-for="Qnt_vondre" class="text-danger"></span>
+
+                    @if (ViewBag.qntinsifusant != null)
+                    {
+                        <br />
+                        <div class="alert alert-danger">
+                            <h3>
+                                <i class="fa-solid fa-circle-exclamation fa-lg" style="color: #e32400;"></i>
+                                <samp class="text-danger">@ViewBag.qntinsifusant</samp>
+                            </h3>
+                        </div>
+                        <br />
+
+                    }
+
+                    <label class="control-label">Prix Vente</label>
+                    <input type="number" asp-for="Prix_Vondre" class="form-control" />
+                    <span asp-validation-for="Prix_Vondre" class="text-danger"></span>
+
+                    <label class="control-label">Total Vente</label>
+                    <input asp-for="Total_Vondre" class="form-control" readonly />
+                    <span asp-validation-for="Total_Vondre" class="text-danger"></span>
+
+                    <label class="control-label">Date De Vente</label>
+                    <input asp-for="DateVondre" class="form-control" readonly />
+                    <span asp-validation-for="DateVondre" class="text-danger"></span>
+                    <hr />
+                    <div class="buttonsDiv">
+                        <input type="submit" value="Enregestrer" class="btn btn-secondary" />
+                        <a class="btn btn-primary" asp-action="IndexForVendeur">Retour </a>
+                    </div>
+                    <hr />
+                    <input value="@ViewBag.ancienquantitieVente" name="ancienquantitieVente" hidden />
+                </form>
+            </div>
+
+
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

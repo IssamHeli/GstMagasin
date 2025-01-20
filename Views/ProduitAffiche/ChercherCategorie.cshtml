@@ -1,0 +1,178 @@
+﻿@model IEnumerable<GstMagazin.Models.ProduitAffiche>
+@{
+    ViewData["Title"] = "Produit Trouve";
+}
+
+@if (ViewBag.directeurlogin != null)
+{
+    <header>
+        <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                    <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                    <ul class="navbar-nav flex-grow-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link  active" asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlansAchats</samp></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-grow-end ">
+                    <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+}
+else if (ViewBag.acheteurslogin != null)
+{
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-controller="ProduitAcheteur" asp-action="Index">
+                    <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="navbar-nav flex-grow-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link active " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " asp-area="" asp-controller="ProduitAcheteur" asp-action="Index"><samp>Stock</samp></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " asp-area="" asp-controller="Planvondre" asp-action="IndexForVendeur"><samp>PlanVentes</samp></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  " asp-area="" asp-controller="Acheteur" asp-action="IndexAcheteur"><samp>Profile</samp></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-grow-end ">
+                    <a class="btn btn-danger" asp-controller="Acheteur" asp-action="LogOut">Déconnecter</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+}
+<div class="LoginDiv">
+    <div class="inputField">
+        @{
+            if (ViewBag.CategorieChercher != null)
+            {
+                <div class="alert alert-info">
+                    <h4><samp class="text-info">Categorie chercher : @ViewBag.CategorieChercher</samp></h4>
+                </div>
+                <p>
+                    <a class="btn btn-primary" asp-action="Index">Retour </a>
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <samp>Reference</samp>
+
+                                </th>
+                                <th>
+                                    <samp>Nom</samp>
+                                </th>
+                                <th>
+                                    <samp>Categorie</samp>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Reference)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nom)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Categorie)
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Actions
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-primary">
+                                                <li><a href="@Url.Action("acheter", "Produit", new { id = item.id })" class="dropdown-item ">Acheter</a></li>
+                                                <li><a href="@Url.Action("Edit", "ProduitAffiche", new { id = item.id })" class="dropdown-item ">Modifier</a></li>
+                                                @if (ViewBag.directeurlogin != null)
+                                                {
+
+                                                    <li><a class="dropdown-item" href="@Url.Action("delete", "ProduitAffiche", new { id = item.id })">Modifier</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div class="cardbottonsdiv">
+
+                                            <div>
+                                            </div>
+                                            <div>
+                                                
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+                <hr />
+            }
+            else
+            {
+                <div class="alert alert-danger">
+
+                    <h3>
+                        <samp class="text-danger"> @ViewBag.IdNotTrouver </samp>
+                    </h3>
+                </div>
+                <p>
+                    <a class="btn btn-primary" asp-action="Index">Retour </a>
+                </p>
+            }
+        }
+    </div>
+</div>

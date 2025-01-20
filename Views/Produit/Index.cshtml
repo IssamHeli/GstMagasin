@@ -1,0 +1,387 @@
+@model PaginatedList<TestHostAppAndBaseDonnes.Models.Produit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlansAchats</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+
+    <div class="inputField">
+        <div class="alert alert-primary">
+            <h1> <samp class="text-primary">La list Des Produits Stocké</samp></h1>
+        </div>
+        <p>
+            <ul class="nav nav-underline justify-content-center">
+                <li>
+                    <a class="btn btn-primary" asp-action="ExportProduits">Exporter</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-secondary" asp-action="Create">Acheter un Produit </a>
+                </li>
+                <li class="nav-item">
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chercher Par
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-primary">
+
+                            <li>
+                                <button class="dropdown-item " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">Par Référence</button>
+
+                            </li>
+                            <li>
+                                <button class="dropdown-item " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Par Nom</button>
+
+                            </li>
+
+                            <li>
+                                <button class="dropdown-item " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">Par Categorie</button>
+                            </li>
+
+                            <li>
+                                <button class="dropdown-item " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">Par Lieu De Stock</button>
+
+                            </li>
+                            <li>
+                                <button class="dropdown-item " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">Par Quantité</button>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </p>
+        
+
+        <!--
+    <ul class="nav nav-underline justify-content-center">
+        <!--
+        <li class="nav-item">
+            <a class="btn btn-primary" asp-action="Create">Ajouter Produit </a>
+        </li>
+        -->
+        <!--
+        <li class="nav-item">
+            <a class="btn btn-secondary" asp-controller="Categorie" asp-action="Index">Categorie</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-secondary" asp-controller="LieuStock" asp-action="Index">Lieu De Stock</a>
+        </li>
+
+        </ul>
+        -->
+    </div>
+</div>
+<div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Chercher Par Nom </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-body">
+                <div class="inputField">
+                    <form method="post" asp-action="ChercherNom">
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" required />
+                        <br>
+                        <div class="inputField">
+                            <div class="inputField">
+                                <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+<div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Chercher Par Categorie </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-body">
+                <div class="inputField">
+                    <form method="post" asp-action="ChercherCategorie">
+
+                        <label for="Categorie" class="control-label">Categorie :</label>
+                        <select id="categoriesDropdown" name="Categorie" class="form-control">
+                            @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                            {
+                                <option value="@category.Value">@category.Text</option>
+                            }
+                        </select>
+                        <div class="inputField">
+                            <div class="inputField">
+                                <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+<div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Chercher Par Lieu De Stock  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-body">
+                <div class="inputField">
+                    <form method="post" asp-action="ChercherLieuStock">
+
+                        <label for="LieuStock" class="control-label">Lieu De Stock :</label>
+                        <select id="categoriesDropdown" name="LieuDeStock" class="form-control">
+                            @foreach (SelectListItem lieustock in (SelectList)ViewBag.LieuDeStocks)
+                            {
+                                <option value="@lieustock.Value">@lieustock.Text</option>
+                            }
+                        </select>
+                        <div class="inputField">
+                            <div class="inputField">
+                                <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Chercher Quantité  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-body">
+                <div class="inputField">
+                    <form method="post" asp-action="Chercherquantite">
+                        <label for="Nom">Quantité </label>
+                        <input type="number" name="Quantite" required />
+                        <div class="inputField">
+                            <div class="inputField">
+                                <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+
+<div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop4" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Chercher Par Reference  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card">
+            <div class="card-body">
+                <div class="inputField">
+                    <form method="post" asp-action="ChercherReference">
+                        <label for="Reference">Référence</label>
+                        <input type="text" name="Reference" required />
+                        <div class="inputField">
+                            <div class="inputField">
+                                <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="inputField">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                @if (Model.HasPreviousPage)
+                {
+                    int pageindex = Model.PageIndex - 1;
+                    <a class="btn btn-secondary" asp-action="Index" asp-route-pageIndex="@pageindex">Précédent</a>
+                }
+            </li>
+            <li><samp class="page-link">Page :@Model.PageIndex</samp></li>
+            <li class="page-item">
+                @if (Model.HasNextPage)
+                {
+                    int pageindex = Model.PageIndex + 1;
+                    <a class="btn btn-secondary" asp-action="Index" asp-route-pageIndex="@pageindex">Suivant</a>
+                }
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="table-responsive">
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+
+                        <th>
+                            <samp>Référence</samp>
+                        </th>
+                        <th>
+                            <samp>Nom</samp>
+                        </th>
+                        <th>
+                            <samp>Quantité Stock</samp>
+                        </th>
+                        <th>
+                            <samp>Prix Unité</samp>
+                        </th>
+                        <th>
+                            <samp>Categorie</samp>
+                        </th>
+                        <th>
+                            <samp>Lieu De Stock</samp>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Reference)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nom)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.quantity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Prix_unity) DH
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Categorie)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LieuDeStock)
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-primary rounded-pill px-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Actions
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-primary">
+                                        <li><a class="dropdown-item " asp-action="AjouterQnt" asp-route-id="@item.id">Ajouter Quantité</a></li>
+                                        <li><a class="dropdown-item " asp-action="Vondre" asp-route-id="@item.id">Vendre</a></li>
+                                        <li><a class="dropdown-item " asp-action="Analyse" asp-route-id="@item.id">Analyse</a></li>
+                                        <li><a class="dropdown-item " asp-action="Edit" asp-route-id="@item.id">Modifier</a></li>
+                                        <li><a class="dropdown-item " asp-action="Delete" asp-route-id="@item.id">Supprimer</a></li>
+                                        <hr />
+                                        <li><a class="dropdown-item" asp-action="Details" asp-route-id="@item.id">Details</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="inputField">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                @if (Model.HasPreviousPage)
+                {
+                    int pageindex = Model.PageIndex - 1;
+                    <a class="btn btn-secondary" asp-action="Index" asp-route-pageIndex="@pageindex">Précédent</a>
+                }
+            </li>
+            <li><samp class="page-link">Page :@Model.PageIndex</samp></li>
+            <li class="page-item">
+                @if (Model.HasNextPage)
+                {
+                    int pageindex = Model.PageIndex + 1;
+                    <a class="btn btn-secondary" asp-action="Index" asp-route-pageIndex="@pageindex">Suivant</a>
+                }
+            </li>
+        </ul>
+    </nav>
+</div>

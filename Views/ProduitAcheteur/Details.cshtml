@@ -1,0 +1,101 @@
+@model TestHostAppAndBaseDonnes.Models.Produit
+
+@{
+    ViewData["Title"] = "Details";
+}
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="ProduitAcheteur" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " asp-area="" asp-controller="ProduitAcheteur" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Planvondre" asp-action="IndexForVendeur"><samp>PlanVentes</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Acheteur" asp-action="IndexAcheteur"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Acheteur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+
+        <div class="alert alert-primary" role="alert">
+            <h1><samp class="text-primary">Actions et Details</samp></h1>
+        </div>
+        <h1>Produit Selectionner</h1>
+        <hr />
+        <h4>Informations</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                <samp>Référence :</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Reference)
+            </dd>
+
+            <dt class="col-sm-2">
+                <samp>Nom :</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nom)
+            </dd>
+            <dt class="col-sm-2">
+                <samp>Quantité stock:</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.quantity)
+            </dd>
+            <dt class="col-sm-2">
+                <samp>Prix unity:</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Prix_unity)
+            </dd>
+            <dt class="col-sm-2">
+                <samp>Categorie :</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Categorie)
+            </dd>
+
+            <dt class="col-sm-2">
+                <samp>Lieu De Stock :</samp>
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LieuDeStock)
+            </dd>
+
+        </dl>
+        <hr />
+        <div class="buttonsDiv">
+            <a class="btn btn-primary" asp-action="AjouterQnt" asp-route-id="@Model.id">Ajouter Quantité</a>
+            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.id">Modifier</a>
+            <a class="btn btn-success" asp-action="Vondre" asp-route-id="@Model.id">Vendre</a>
+            <a class="btn btn-primary" asp-action="Index">Retour </a>
+        </div>
+        <hr />
+    </div>
+</div>

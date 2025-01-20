@@ -1,0 +1,81 @@
+@model TestHostAppAndBaseDonnes.Models.Directeur
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="produit" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlanAchat</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="alert alert-danger" role="alert">
+            <h1>Vous Etes Sure ?</h1>
+        </div>
+        <hr />
+        <h4>Directeur Selectionner</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <div class="inputField">
+                <input type="hidden" asp-for="it" />
+                <div class="buttonsDiv">
+                    <input type="submit" value="Supprimmer" class="btn btn-danger" />
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@Model.it">Retour</a>
+                    <a class="btn btn-primary" asp-action="Index">Retour Vers La liste</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

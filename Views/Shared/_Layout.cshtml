@@ -1,0 +1,43 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Home- GstMagazin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GstMagazin.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/Images/GestionMagazinLogo.webp" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeGeqgqAAAAANsy_SLnKR6UmF4gMXghd5V97fCc" ></script>
+
+
+</head>
+<body>
+
+    @RenderBody()
+
+
+    <!-- Include Font Awesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--<footer class="border-top footer text-muted">
+        <div class="container">
+
+        &copy; 2023 - GstMagazin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer>-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>
+
+<!--
+<img src="~/Images/GestionMagazinLogo.webp" class="img-fluid" alt="logimage">
+-->

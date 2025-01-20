@@ -1,0 +1,147 @@
+﻿@model IEnumerable<TestHostAppAndBaseDonnes.Models.LieuStock>
+
+@{
+    ViewData["Title"] = "Lieu De Stock";
+}
+ @if(ViewBag.directeurlogin != null)
+    {
+        <header>
+            <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                        <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                        <ul class="navbar-nav flex-grow-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlansAchats</samp></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-grow-end ">
+                        <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }else if (ViewBag.acheteurslogin != null)
+    {
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-controller="ProduitAcheteur" asp-action="Index">
+                        <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                        <ul class="navbar-nav flex-grow-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="ProduitAcheteur" asp-action="Index"><samp>Stock</samp></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="Planvondre" asp-action="IndexForVendeur"><samp>PlanVentes</samp></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link  " asp-area="" asp-controller="Acheteur" asp-action="IndexAcheteur"><samp>Profile</samp></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-grow-end ">
+                        <a class="btn btn-danger" asp-controller="Acheteur" asp-action="LogOut">Déconnecter</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+    
+@if(ViewBag.DesignationNotTrouver != null)
+{
+    <div class="LoginDiv">
+        <div class="inputField">
+            <div class="alert alert-info">
+                <h3>
+                    <i class="fa-solid fa-circle-info fa-lg" style="color: #874efe;"></i>
+                    <samp class="text-info">@ViewBag.DesignationNotTrouver</samp>
+                </h3>
+            </div>
+            <p>
+
+                <a class="btn btn-primary" asp-action="Index">Retour</a>
+
+            </p>
+        </div>
+    </div>
+   
+}
+else
+{
+    <div class="LoginDiv">
+        <div class="inputField">
+
+            @if (ViewBag.DesignationChercher != null)
+             {
+                <div class="alert alert-info">
+                    <h3><samp class="text-info">La Designation chercher par est : @ViewBag.DesignationChercher</samp></h3>
+                </div>
+                <p>
+
+                    <a class="btn btn-primary" asp-action="Index" hidden>Retour</a>
+                </p>
+             }
+            <div class="row">
+                 @foreach (var item in Model)
+                 {
+                    <div class="col-md-4 col-12">
+                        <div class="card1 mb-4">
+                            <div class="card-body1">
+                                <h5 class="card-title">Categorie </h5>
+
+                                <p class="card-text">
+                                    Designation: @Html.DisplayFor(modelItem => item.Designation)<br>
+                                </p>
+                                <a href="@Url.Action("Edit", "LieuStock", new { id = item.id })" class="btn btn-secondary rounded-pill px-3">Modifier</a>
+                            </div>
+
+                        </div>
+                    </div>
+                 }
+                </div>
+            </div>
+    </div>
+        
+}
+

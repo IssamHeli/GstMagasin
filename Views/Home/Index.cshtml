@@ -1,0 +1,433 @@
+﻿@{
+    ViewData["Title"] = "Gestionner Vos Magasins - GSTMagasin";
+}
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-controller="Home" asp-action="Index">Accueil</a>
+                    </li>
+                    <li><a href="#Fonctionnalites" class="nav-link ">Fonctionnalités</a></li>
+                    <li><a href="#Features" class="nav-link ">Caractéristiques</a></li>
+                    <li><a href="#ContactUs" class="nav-link ">Contact</a></li>
+                    <li><a href="" class="nav-link ">Blogs</a></li>
+
+                </ul>
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Connecter
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" asp-controller="Directeur" asp-action="loginDirecteur">Directeur</a></li>
+                        <li><a class="dropdown-item" asp-controller="Acheteur" asp-action="loginAcheteur">Magasinier</a></li>
+                    </ul>
+                </div>
+                <br />
+                <div class="ms-3">
+                    <a href="#DemoRequest" class="btn btn-success me-2">Demander une Démo</a>
+                    <a href="#FreeTrial" class="btn btn-success me-2">Essai Gratuit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container my-5 my-5">
+    <!-- Section 1 -->
+    <div class="row align-items-center mb-5 ">
+        <div class="col-md-6 order-md-2">
+            <img src="~/Images/midiumprb1.webp" alt="Gestion Image" class="img-fluid rounded  transition-transform1">
+        </div>
+
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Découvrez GSTMagasin</h3>
+            <p class="text-muted">
+                Bienvenue sur GSTMagasin, votre application web tout-en-un pour une gestion de magasin efficace et simplifiée. Que vous dirigiez une petite boutique ou une grande chaîne de vente au détail, notre plateforme est conçue pour simplifier vos opérations quotidiennes et accroître votre productivité.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Section 2 -->
+    <div class="row align-items-center mb-2 ">
+        <div class="col-md-6">
+            <img src="~/Images/prbgerez1.webp" alt="Inventory Image" class="img-fluid rounded  transition-transform1">
+        </div>
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Une gestion d'inventaire simplifiée</h3>
+            <p class="text-muted">
+                Gérez votre inventaire sans effort avec GSTMagasin. Notre interface intuitive vous permet de surveiller les niveaux de stock, de suivre les mouvements des produits et de définir des points de réapprovisionnement automatiques. Économisez du temps et de l'argent en optimisant la gestion de votre inventaire grâce à notre solution intelligente.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="row align-items-center  mb-2 fade-in1">
+        <div class="col-md-6 order-md-2">
+            <img src="~/Images/Enovation.webp" alt="Sales Tools Image" class="img-fluid rounded  transition-transform1">
+        </div>
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Augmentez vos ventes</h3>
+            <p class="text-muted">
+                Optimisez votre potentiel de ventes et améliorez la satisfaction de vos clients avec les outils de gestion des ventes de GSTMagasin. Personnalisez vos promotions et réductions pour cibler des segments de clients spécifiques. Avec GSTMagasin, prenez le contrôle de votre stratégie de vente et voyez vos revenus augmenter.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="row align-items-center mb-2 fade-in1">
+        <div class="col-md-6">
+            <img src="~/Images/fournisseurCommande.webp" alt="Supplier and Order Management" class="img-fluid rounded  transition-transform1">
+        </div>
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Gestion des fournisseurs et des commandes</h3>
+            <p class="text-muted">
+                Gérez vos fournisseurs et suivez vos commandes avec GSTMagasin. Notre plateforme vous permet de créer des commandes, suivre les livraisons et gérer les relations avec vos fournisseurs de manière efficace, réduisant ainsi les erreurs et améliorant les délais de réapprovisionnement.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="row align-items-center mb-2 fade-in1">
+        <div class="col-md-6 order-md-2">
+            <img src="~/Images/mobileFriendly.webp" alt="Mobile-Friendly" class="img-fluid rounded  transition-transform1">
+        </div>
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Interface mobile conviviale</h3>
+            <p class="text-muted">
+                GSTMagasin est conçu pour fonctionner parfaitement sur tous les appareils, y compris les smartphones et tablettes. Vous pouvez gérer votre magasin où que vous soyez grâce à une interface mobile conviviale, assurant une gestion fluide et efficace en déplacement.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="row align-items-center mb-2 fade-in1">
+        <div class="col-md-6">
+            <img src="~/Images/multiUserAccess.webp" alt="Multi-User Access" class="img-fluid rounded transition-transform1">
+        </div>
+        <div class="col-md-6 mb-2">
+            <h3 class="text-primary mb-3">Gestion multi-utilisateurs</h3>
+            <p class="text-muted">
+                Gérez facilement les accès des différents utilisateurs de votre magasin grâce à GSTMagasin. Notre solution vous permet de créer et de gérer des comptes utilisateurs pour les responsables, les vendeurs, et les gestionnaires de stock, tout en assurant un contrôle total sur les permissions et les actions.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5 fade-in1 shadow " id="Fonctionnalites">
+    <div class="text-center mb-4">
+        <h2 class="text-primary fw-bold">Découvrez les Fonctionnalités Clés de GSTMagasin</h2>
+        <p class="text-muted">Explorez les fonctionnalités essentielles de GSTMagasin pour une gestion de magasin simplifiée et optimisée.</p>
+    </div>
+
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Stock"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Plan des achats"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Plan des Ventes"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Analyse de Magasin"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Les Articles"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="~/Images/Stock.webp" alt="Image représentant le stock">
+                <div class="carousel-caption ">
+                    <h5>Stock</h5>
+                    <p>Optimisez la gestion de votre stock.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/PlansAchats.webp" alt="Plans des achats">
+                <div class="carousel-caption ">
+                    <h5>Plans des achats</h5>
+                    <p>Gestion précise des achats en temps réel.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/PlanVentes.webp" alt="Plans des achats">
+                <div class="carousel-caption ">
+                    <h5>Plan des Ventes</h5>
+                    <p>Visualisez tous vos Ventes en temps réel pour une gestion précise et efficace.</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/Analyse.webp" alt="Analyse de magasin">
+                <div class="carousel-caption ">
+                    <h5>Analyse de Magasin</h5>
+                    <p>Visualisez toutes vos données sous forme de graphiques avec des options de filtrage définies et personnalisables.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/affiches.webp" alt="Les Articles">
+                <div class="carousel-caption ">
+                    <h5>les Articles</h5>
+                    <p>Définir et enregistrer des articles avec des informations de base pour gagner du temps et éviter de saisir à nouveau les mêmes informations lors de chaque achat.  </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+
+
+    <!-- Functionalities Section (Visible Only on Mobile) -->
+    <div class="container my-5 d-block d-md-none">
+        <div class="row gy-4">
+            <!-- Feature 1 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/Stock.webp" alt="Icone gestion de stock" class="img-fluid border">
+                    <h5 class="fw-bold">Gestion de Stock</h5>
+                    <p>Un suivi précis et efficace de vos stocks pour éviter les ruptures ou les excédents.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/PlansAchats.webp" alt="Icone plans d'achats" class="img-fluid border">
+                    <h5 class="fw-bold">Plans des Achats</h5>
+                    <p>Visualisez tous vos achats en temps réel pour une gestion précise et efficace.</p>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/PlanVentes.webp" alt="Icone plans d'achats" class="img-fluid border">
+                    <h5 class="fw-bold">Plan des Ventes</h5>
+                    <p>Visualisez tous vos Ventes en temps réel pour une gestion précise et efficace.</p>
+                </div>
+            </div>
+
+
+
+            <!-- Feature 4 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/Analyse.webp" alt="Icone analyse de magasin" class="img-fluid border">
+                    <h5 class="fw-bold">Analyse de Magasin</h5>
+                    <p>Visualisez toutes vos données sous forme de graphiques avec des options de filtrage définies et personnalisables.</p>
+                </div>
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/affiches.webp" alt="Icone affiches de produits" class="img-fluid border">
+                    <h5 class="fw-bold">les articles</h5>
+                    <p>Définir et enregistrer des articles avec des informations de base pour gagner du temps et éviter de saisir à nouveau les mêmes informations lors de chaque achat.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+<div class="container my-5 mb-5 fade-in1" id="Features">
+    <h2 class="text-center text-primary mb-5">Caractéristiques clés de GSTMagasin</h2>
+    <div class="row">
+        <!-- Fonctionnalité 1 : Gestion des stocks -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light rounded">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Gestion des stocks simplifiée</h5>
+                    <p class="card-text text-muted">
+                        Suivez facilement vos niveaux de stock, surveillez les mouvements des produits et définissez des points de réapprovisionnement automatiques pour ne jamais manquer d'articles essentiels.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fonctionnalité 2 : Optimisation des ventes -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light rounded">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Maximisez les ventes avec des promotions intelligentes</h5>
+                    <p class="card-text text-muted">
+                        Personnalisez les remises et promotions pour cibler des segments spécifiques de clients, augmentant ainsi les ventes et améliorant leur satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fonctionnalité 3 : Gestion des fournisseurs et des commandes -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-light rounded">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Gestion des fournisseurs et des commandes</h5>
+                    <p class="card-text text-muted">
+                        Rationalisez le processus de commande, la gestion des fournisseurs et le suivi des livraisons pour garantir un fonctionnement fluide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<br />
+<br />
+
+<section id="DemoRequest" class="container my-5 text-center">
+    <h2 class="text-primary fw-bold">Demandez une Démo / Accédez à une Application Déjà Configurée</h2>
+    <p>Découvrez GSTMagasin en action avec une démo personnalisée.</p>
+    <p>
+        Envoyez de voir à quoi ressemble une application pleinement fonctionnelle ? Accédez à notre application existante grâce à des identifiants fournis spécialement pour la démonstration :
+    </p><a href="mailto:heli.issame@gmail.com?subject=Demande%20de%20Démo&body=Bonjour,%0D%0A%0D%0AJe souhaite demander une démonstration de votre application."
+           class="btn btn-success btn-lg">
+        Demander une Démo
+    </a>
+
+</section>
+
+<section id="FreeTrial" class="container my-5 text-center">
+    <h2 class="text-primary fw-bold">Profitez d'un Essai Gratuit / Créez Votre Propre Démo pour un Essai Gratuit</h2>
+    <p>Essayez GSTMagasin gratuitement pendant 14 jours, sans engagement.</p>
+    <p>
+        Prêt à tester nos solutions pour votre propre projet ? Nous vous proposons un essai gratuit avec une toute nouvelle application et une base de données dédiée.
+        Partez de zéro et expérimentez toutes les fonctionnalités pour répondre aux besoins spécifiques de votre entreprise.
+    </p>
+    <a href="mailto:heli.issame@gmail.com?subject=Demande%20de%20Essai%20Gratuit&body=Bonjour,%0D%0A%0D%0AJe souhaite  Demander un Essai Gratuit" class="btn btn-success btn-lg">Demander un Essai Gratuit</a>
+</section>
+
+
+
+<br />
+<br />
+
+
+<!-- Contactez-Nous -->
+<div class="container my-5 mb-5 fade-in1">
+    <section id="ContactUs" class="contact-section shadow">
+        <div class="text-center mb-4">
+            <h2 class="text-primary fw-bold">Contactez-Nous</h2>
+            <p class="text-muted">Vous avez des questions ou des commentaires ? Contactez-nous, nous serons ravis de vous aider !</p>
+        </div>
+
+        <div class="row">
+            <!-- Informations de contact -->
+            <div class="col-md-6 mb-4">
+                <div class="container">
+                    <h5 class="text-primary">Informations de Contact</h5>
+                    <p class="lead">N'hésitez pas à nous joindre par email pour toute demande ou assistance.</p>
+                    <p><strong>Email :</strong> <a href="mailto:heli.issame@gmail.com" class="text-decoration-none text-primary">heli.issame@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Formulaire de message -->
+            <div class="col-md-6">
+                <div class="container mb-3">
+                    <h3 class="text-primary">Envoyez-nous un message</h3>
+                    <form id="formEmailSender" method="post" class="form-shadow p-4 rounded border">
+                        <div class="codestatus" role="alert">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Votre Nom *</label>
+                            <input type="text" class="form-control" id="Name" name="Name" placeholder="Entrez votre nom complet" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Votre Email *</label>
+                            <input type="email" class="form-control" id="Email" name="Email" placeholder="Entrez votre adresse email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="Message" name="Message" rows="5" placeholder="Rédigez votre message ici..." required></textarea>
+
+
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input name="RadioBtn" type="radio" id="RadioBtn" class="form-check-input" required />
+                            <label for="RadioBtn" class="form-check-label">
+                                J'accepte que mes données soumises soient collectées et stockées.
+                            </label>
+                        </div>
+
+
+
+                        <input type="hidden" name="recaptcha_token" id="recaptchaToken" hidden />
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="submitButton" value="Envoyer">Envoyer </button>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container shadow pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <!-- Company Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-primary">GSTMagasin</h5>
+                <p>Votre solution tout-en-un pour une gestion efficace de votre magasin. Optimisez vos opérations et augmentez votre productivité grâce à notre plateforme conçue pour les petites et grandes entreprises de vente au détail</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-primary">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-dark text-decoration-none">Accueil</a></li>
+                    <li><a href="#Fonctionnalites" class="text-dark text-decoration-none">Fonctionnalités</a></li>
+                    <li><a href="#Features" class="text-dark text-decoration-none">Caractéristiques</a></li>
+                    <li><a href="#ContactUs" class="text-dark text-decoration-none">Contactez-Nous</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-primary">Contactez-nous</h5>
+                <p><strong>Email:</strong> <a href="mailto:heli.issame@gmail.com" class="text-dark text-decoration-none">heli.issame@gmail.com</a></p>
+            </div>
+        </div>
+
+        <hr class="my-4 border-light">
+
+        <div class="row">
+            <!-- Social Media -->
+            <div class="col text-center">
+                <h5 class="text-primary mb-3">Suivez-nous</h5>
+                <a href="" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                <a href="" class="text-dark me-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>&copy; 2024 GSTMagasin. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<button id="scrollToTopBtn" class="btn btn-primary" onclick="scrollToTop()">↑</button>
+

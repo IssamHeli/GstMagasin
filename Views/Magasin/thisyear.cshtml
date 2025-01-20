@@ -1,0 +1,199 @@
+﻿@model GstMagazin.Models.calculatedData
+
+@{
+    ViewData["Title"] = "Index";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlanAchats</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="alert alert-primary"><h1> <samp class="text-primary">Analyse De Magasin Cette Année</samp></h1> </div>
+        <p class="buttonsDiv">
+            <a class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filtrer Par</a>
+
+            <a type="button" class="btn btn-primary" asp-action="Index">Analyse Generale</a>
+        </p>
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                </button>
+                <ul class="dropdown-menu dropdown-menu-primary">
+                    <li><a class="dropdown-item" asp-controller="Magasin" asp-action="ThisDay">aujourd'hui</a></li>
+                    <li><a class="dropdown-item" asp-controller="Magasin" asp-action="LastWeek">cette semaine</a></li>
+                    <li><a class="dropdown-item" asp-controller="Magasin" asp-action="thismonth">ce mois-ci</a></li>
+                    <li><a class="dropdown-item" asp-controller="Magasin" asp-action="thisyear">Cette Année</a></li>
+                </ul>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card card-body">
+                        <div class="inputField">
+                            <div class="inputField">
+                                <h5 class="card-header">Filtrer Par Jour  :</h5>
+                            </div>
+                            <div class="inputField">
+                                <form method="post" asp-action="filterParJour">
+                                    <div class="form-control">
+                                        <label class="control-label">Jour :</label>
+                                        <input type="date" name="Joure" required />
+                                        <div class="inputField">
+                                            <input type="submit" class="btn btn-outline-primary" value="Filtrer" />
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-body">
+                        <div class="inputField">
+                            <div class="inputField">
+                                <h5 class="card-header">Filtrer Par Mois  :</h5>
+                            </div>
+                            <div class="inputField">
+                                <form method="post" asp-action="filterParMonth" class="form-control">
+                                    <div>
+                                        <label class="control-label">Mois : </label>
+                                        <input type="number" name="mois" required />
+                                    </div>
+                                    <div>
+                                        <label class="control-label">Année : </label>
+                                        <input type="number" name="anne" required />
+                                    </div>
+                                    <div class="inputField">
+                                        <input type="submit" class="btn btn-outline-primary" value="Filtrer" />
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-body">
+                        <div class="inputField">
+                            <div class="inputField">
+                                <h5 class="card-header">Filtrer Par Année  :</h5>
+                            </div>
+                            <div class="inputField">
+                                <form method="post" asp-action="filterParAnne">
+                                    <div class="form-control">
+                                        <label class="control-label">Année :</label>
+                                        <input type="number" name="filterAnne" required />
+                                        <div class="inputField">
+                                            <input type="submit" class="btn btn-outline-primary" value="Filtrer" />
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+    </div>
+</div>
+<script>
+            // Get the canvas element
+            var ctx = document.getElementById('myChart').getContext('2d');
+
+            // Define the data for the chart
+            var chartData = {
+                labels: ['Total Vondre' , 'Total Achat', 'le Profite '  ],
+                datasets: [{
+                    label: '@Model.year',
+                    data: [@Model.TotalSales,@Model.TotalPurchases,@Model.Profit ],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)', // Green for Total Ventes
+                        'rgba(139, 0, 0, 0.2)', // Red for Total Achats
+                        'rgba(0, 0, 139, 0.2)' // Blue for La Différence
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 190, 2)',
+                        'rgba(139, 0, 0, 1',
+                        'rgba(0, 0, 139, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            // Define chart options
+            var chartOptions = {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            };
+
+            // Create the bar chart
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: chartData,
+                options: chartOptions
+            });
+</script>
+
+
+
+
+

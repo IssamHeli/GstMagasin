@@ -1,0 +1,112 @@
+﻿@model IEnumerable<TestHostAppAndBaseDonnes.Models.PlanVondre>
+
+@{
+    ViewData["Title"] = "Plan Vondres";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="ProduitAcheteur" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAcheteur" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active" asp-area="" asp-controller="PlanVondre" asp-action="IndexForVendeur"><samp>PlanVentes</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Acheteur" asp-action="IndexAcheteur"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Acheteur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+
+    <div class="inputField">
+        <div class="alert alert-success">
+            <h3><samp class="text-success">Reference Chercher :  @ViewBag.ReferenceChercher</samp></h3>
+            <h3><samp class="text-success">Total des Ventes  par Reference  est :@ViewBag.totalparReference</samp></h3>
+        </div>
+        <p>
+            <a class="btn btn-primary" asp-action="IndexForVendeur">Retour </a>
+        </p>
+    </div>
+</div>
+
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            <samp>Reference</samp>
+                        </th>
+                        <th>
+                            <samp>Nom</samp>
+                        </th>
+                        <th>
+                            <samp>Quantitié Vente</samp>
+                        </th>
+                        <th>
+                            <samp>Prix Vente</samp>
+                        </th>
+                        <th>
+                            <samp>Total</samp>
+                        </th>
+                        <th>
+                            <samp>Date Vente </samp>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Reference)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.produit.Nom)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Qnt_vondre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Prix_Vondre)DH
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Total_Vondre)DH
+                            </td>
+                            <td>
+                                @item.DateVondre.ToString("dd/MM/yyyy HH:mm:ss")
+                            </td>
+                            <td>
+                                <a class="btn btn-secondary" asp-action="EditPlanVenteforVendeur" asp-route-id="@item.id">Modifier</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+<div>

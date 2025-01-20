@@ -1,0 +1,99 @@
+@model TestHostAppAndBaseDonnes.Models.Directeur
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlanAchat</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut"> Log Out</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="alert alert-secondary">
+            <h1><samp class="text-secondary">Modifier le Profile</samp></h1>
+        </div>
+        <hr />
+        <div class="inputField">
+
+            <h4><samp>Information :</samp></h4>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3><samp class="text-danger">@ViewBag.ancienincorect</samp></h3>
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="it" />
+                        <div class="form-group">
+                            <samp><label asp-for="UserName" class="control-label"></label></samp>
+                            <input asp-for="UserName" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <samp><label asp-for="Password" class="control-label" hidden></label></samp>
+                            <input asp-for="Password" class="form-control" hidden />
+                            <span asp-validation-for="Password" class="text-danger" hidden></span>
+                        </div>
+                        <div class="form-group">
+                            <samp><label class="control-label">Ancien mot de passe :</label></samp>
+                            <input class="form-control" name="ancienpassword" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <samp><label class="control-label">Nouvaux mot de passe :</label></samp>
+                            <input class="form-control" name="Nouvauxpassword" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <hr />
+                        <div class="buttonsDiv">
+                            <input type="submit" value="Enregestrer" class="btn btn-secondary" />
+                            <a class="btn btn-primary" asp-action="Index">Retour </a>
+                        </div>
+                        <hr />
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

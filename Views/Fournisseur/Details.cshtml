@@ -1,0 +1,31 @@
+@model GstMagazin.Models.Fournisseur
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Fournisseur</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tele)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tele)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model?.id">Modifier</a> 
+    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model?.id">Supprimmer</a>
+    <a class="btn btn-primary" asp-action="Index">Retour</a>
+</div>

@@ -1,0 +1,238 @@
+@model PaginatedList<TestHostAppAndBaseDonnes.Models.PlanVondre>
+
+@{
+    ViewData["Title"] = "Plan Achats";
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlansAchats</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+
+    <div class="inputField">
+        <div class="alert alert-primary">
+
+            <h1><samp class="text-primary">La List des  Plans Ventes</samp></h1>
+        </div>
+        <p>
+
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Chercher</button>
+
+        </p>
+        <div class="row">
+            <div class="col-sm-4">
+
+                <div class="collapse  multi-collapse" id="multiCollapseExample1">
+                    <div class="card">
+                        <h5 class="card-header">Chercher Par : </h5>
+                        <div class="card-body">
+                            <div class="inputField">
+                                <form method="post" asp-action="ChercherproduitReference">
+                                    <label for="Reference">Reference</label>
+                                    <input  name="Reference" required />
+                                    <div class="inputField">
+                                        <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+            <div class="col-sm-4">
+                <div class="collapse  multi-collapse" id="multiCollapseExample1">
+                    <div class="card">
+                        <h5 class="card-header">Chercher Par :</h5>
+                        <div class="card-body">
+                            <div class="inputField">
+                                <form method="post" asp-action="Chercherproduitnom">
+                                    <label for="produitnom">Nom De Produit</label>
+                                    <input type="text" name="produitnom" required />
+                                    <div class="inputField">
+                                        <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br />
+            <div class="col-sm-4">
+
+                <div class="collapse  multi-collapse" id="multiCollapseExample1">
+                    <div class="card">
+                        <h5 class="card-header">Chercher Par : </h5>
+                        <div class="card-body">
+                            <div class="inputField">
+                                <form method="post" asp-action="ChercherdateVondre">
+                                    <label for="datevondre">Date De Vente</label>
+                                    <input type="date" name="datevondre" required />
+                                    <div class="inputField">
+                                        <input type="submit" class="btn btn-outline-primary" value="Chercher" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+    
+</div>
+    <div class="inputField">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    @if (Model.HasPreviousPage)
+                    {
+                        int pageindex = Model.PageIndex - 1;
+                        <a class="btn btn-outline-primary" asp-action="Index" asp-route-pageIndex="@pageindex">Précédent</a>
+                    }
+                </li>
+                <li><samp class="page-link">Page :@Model.PageIndex</samp></li>
+                <li class="page-item">
+                    @if (Model.HasNextPage)
+                    {
+                        int pageindex = Model.PageIndex + 1;
+                        <a class="btn btn-outline-primary" asp-action="Index" asp-route-pageIndex="@pageindex">Suivant</a>
+                    }
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+<div class="LoginDiv">
+    <div class="inputField">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        
+                        <th>
+                            Référence
+                        </th>
+                        <th>
+                            Produit
+                        </th>
+                        <th>
+                            Quantité Vente
+                        </th>
+                        <th>
+                            Prix Vente
+                        </th>
+                        <th>
+                            Total 
+                        </th>
+                        <th>
+                            Date de Vente
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Reference)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.produit.Nom)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Qnt_vondre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Prix_Vondre) Dh
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Total_Vondre) Dh
+                            </td>
+                            <td>
+                                @item.DateVondre.ToString("dd/MM/yyyy HH:mm:ss")
+                            </td>
+                            <td>
+                                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.id">Modifier</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div class="inputField">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    @if (Model.HasPreviousPage)
+                    {
+                        int pageindex = Model.PageIndex - 1;
+                        <a class="btn btn-outline-primary" asp-action="Index" asp-route-pageIndex="@pageindex">Précédent</a>
+                    }
+                </li>
+                <li><samp class="page-link">Page :@Model.PageIndex</samp></li>
+                <li class="page-item">
+                    @if (Model.HasNextPage)
+                    {
+                        int pageindex = Model.PageIndex + 1;
+                        <a class="btn btn-outline-primary" asp-action="Index" asp-route-pageIndex="@pageindex">Suivant</a>
+                    }
+                </li>
+            </ul>
+        </nav>
+    </div>
+

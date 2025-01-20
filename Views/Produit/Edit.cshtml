@@ -1,0 +1,155 @@
+@model TestHostAppAndBaseDonnes.Models.Produit
+
+@{
+    ViewData["Title"] = "Edit";
+
+}
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Produit" asp-action="Index">
+                <img src="~/Images/GestionMagazinLogo.webp" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-center">
+                <ul class="navbar-nav flex-grow-center">
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="ProduitAffiche" asp-action="Index"><samp>les articles</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" asp-area="" asp-controller="produit" asp-action="Index"><samp>Stock</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " asp-area="" asp-controller="Magasin" asp-action="Index"><samp>Analyse</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanVondre" asp-action="Index"><samp>PlansVentes</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="PlanAchat" asp-action="Index"><samp>PlansAchats</samp></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Acheteur" asp-action="Index"><samp>Magasinier</samp></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-area="" asp-controller="Directeur" asp-action="index"><samp>Profile</samp></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-end ">
+                <a class="btn btn-danger" asp-controller="Directeur" asp-action="LogOut">Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="LoginDiv">
+    <div class="inputField">
+
+        <div class="alert alert-secondary" role="alert">
+            <h1><samp class="text-secondary">Modifier </samp></h1>
+        </div>
+        <h2>Produit Selectionner</h2>
+        <hr />
+        <form asp-action="Edit" class="inputField">
+            <h4> <samp>Informations :</samp></h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+
+            @if(ViewBag.NvqntPlusDeTotalVente != null)
+            {
+                <div class="alert alert-danger">
+                    <h3>
+                        <i class="fa-solid fa-circle-exclamation fa-lg" style="color: #e32400;"></i>
+                        <samp class="text danger">@ViewBag.NvqntPlusDeTotalVente</samp>
+                    </h3>
+                </div>
+            <hr>
+            }
+
+            <label class="control-label">Référence</label>
+            <input asp-for="Reference" class="form-control" />
+            <span asp-validation-for="Reference" class="text-danger"></span>
+
+            <label class="control-label">Nom</label>
+            <input asp-for="Nom" class="form-control" />
+            <span asp-validation-for="Nom" class="text-danger"></span>
+
+            @if (ViewBag.QuantitiéDejaVenter != null)
+            {
+                <div class="alert alert-info">
+                    <h3>
+                        
+                        <i class="fa-solid fa-circle-info fa-lg" style="color: #874efe;"></i>
+                        <label class="control-label ">Quantité déjà vendue </label>
+                    </h3>
+                    <input value="@ViewBag.QuantitiéDejaVenter" class="form-control" readonly />
+                </div>
+
+            }
+
+            
+            <label class="control-label">Quantité Stock</label>
+            <input type="number" asp-for="quantity" class="form-control" />
+            <span asp-validation-for="quantity" class="text-danger"></span>
+
+           
+            <label class="control-label">Prix Unité</label>
+            <input type="number" asp-for="Prix_unity" class="form-control" />
+            <span asp-validation-for="Prix_unity" class="text-danger"></span>
+            <!--
+            <label class="control-label">Categorie</label>
+            <input  asp-for="Categorie" class="form-control" />
+            <span asp-validation-for="Categorie" class="text-danger"></span>
+
+            <label class="control-label">Lieu De Stock</label>
+            <input  asp-for="LieuDeStock" class="form-control" />
+            <span asp-validation-for="LieuDeStock" class="text-danger"></span>
+            -->
+            
+
+                <label class="control-label">Categorie :</label>
+                <select id="categoriesDropdown"  name="Categorie" class="form-control">
+                    @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                    {
+                            bool isSelected = false;
+                            if(category.Value == Model.Categorie)
+                            {
+                               isSelected = true;
+                            }
+                            <option value="@category.Value"  selected="@isSelected">@category.Text</option>
+                    }
+                </select>
+
+
+                <label class="control-label">Lieu De Stock :</label>
+                 <select id="categoriesDropdown" name="LieuDeStock" class="form-control">
+                    @foreach (SelectListItem lieustock in (SelectList)ViewBag.LieuDeStocks)
+                    {
+                        bool isSelected = false;
+                            if(lieustock.Value == Model.LieuDeStock)
+                            {
+                               isSelected = true;
+                            }
+                            <option value="@lieustock.Value" selected="@isSelected">@lieustock.Text</option>
+
+                    }
+                </select>
+            <hr />
+            
+            <div class="buttonsDiv">
+                <input type="submit" value="Enregestrer" class="btn btn-secondary" />
+                <a class="btn btn-primary" asp-action="Index">Retour Vers La List </a>
+            </div>
+            <hr />
+        </form>
+    </div>
+    </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

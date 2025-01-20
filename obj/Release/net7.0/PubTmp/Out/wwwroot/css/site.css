@@ -1,0 +1,675 @@
+﻿* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.fade-in1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+    .fade-in1.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.transition-transform1 {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .transition-transform1:hover {
+        transform: scale(1.05);
+    }
+
+/* Ensure smooth scroll behavior */
+@media screen and (max-width: 912px)
+{
+    html {
+        font-size: 16px;
+    }
+
+    .LoginDiv {
+        flex-direction: column;
+    }
+
+    .buttonsDiv {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .LoginDivVraix {
+        flex-direction: column;
+    }
+
+    .imagediv {
+        width: 100%
+    }
+
+    .RightDiv {
+        width: 100%;
+    }
+
+    .DivsForSelect {
+        flex-direction: column;
+    }
+
+    .DivDirecteur {
+        width: 100%;
+    }
+
+    .DivVondoure {
+        width: 100%;
+    }
+
+    .DivAcheteur {
+        width: 100%;
+    }
+
+    .imagediv1 {
+        width: 100%;
+    }
+
+
+
+
+
+    .imagedivPrincipal {
+        width: 100%;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .RightDivPrincipal {
+        width: 100%;
+        order: 2;
+    }
+
+    .imagedivPrincipal1 {
+        width: 100%;
+    }
+
+    .RightDivPrincipal1 {
+        width: 100%;
+    }
+
+    .divPrincipal {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+    }
+
+
+    .bntinscriheader {
+        padding-bottom: 5px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom: 60px;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+}
+
+.LoginDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+.LoginDivVraix {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    filter: drop-shadow(6px 6px 6px cornflowerblue);
+}
+.LoginDivVraix1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    filter: drop-shadow(6px 6px 6px cornflowerblue);
+}
+.editDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+
+.imagediv {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    align-self: center
+}
+
+.imagediv img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.RightDiv {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputField {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self:center;
+    margin: 10px;
+}
+    .inputField samp h1 {
+        text-align: center;
+    }
+
+    .inputField a, .inputField input {
+
+        margin : 2px;
+    }
+
+.DivsForSelect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imagediv1 {
+    width: auto;
+    height: 300px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+    .imagediv1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+.InfoSelect {
+    width: 100%;
+    height: max-content;
+}
+
+    .InfoSelect h1 {
+        text-align: center;
+    }
+
+    .InfoSelect a {
+        width: 100%;
+    }
+
+
+.DivPrincipale {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    filter: drop-shadow(2px 2px 4px ThreeDDarkShadow);
+}
+
+
+.HomeContaner {
+    display: flex;
+    justify-content: center;
+    justify-content : center;
+    align-self:center;
+    width: 90%;
+    height: max-content;
+}
+
+.divPrincipal {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    min-height: 80vh; /* Ensure each section takes at least full viewport height */
+    align-items: center;
+    align-self: center;
+    padding: 0;
+}
+
+
+.RightDivPrincipal {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.imagedivPrincipal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+a{
+    text-decoration : none;
+}
+
+inputField1 {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self:center;
+    margin: 10px;
+    text-align :center;
+}
+.imagedivPrincipal {
+    min-width: 60%;
+    height: max-content;
+    display: flex;
+    align-self: center;
+    background-color: white;
+}
+
+.RightDivPrincipal1 {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+.buttonsDiv button {
+    margin : 3px;
+}
+input {
+    border: solid 1px lightblue;
+}
+
+#myChart {
+    width: 100%;
+}
+.animate-scroll-first-image {
+    opacity: 1;
+    transform: translateY(0px);
+    animation: shake1 6s ease infinite; /* Apply the shaking animation */
+}
+.animate-scroll {
+    opacity: 0;
+    transform: scale(0.7);
+    transform: translateY(0);
+}
+
+
+    .animate-scroll.show {
+        transform: scale(1);
+        transition: opacity 1s ease-out, transform 2s ease-out;
+        animation: shake 3s infinite ;
+    }
+
+.animate-scroll.left .left-item1 {
+  transform: translateY(-50%);
+  opacity: 0.2;
+}
+
+.animate-scroll.left .right-item1 {
+  transform: translateY(50%);
+  opacity: 0.1;
+}
+
+.animate-scroll.right .left-item1 {
+  transform: translateY(-50%);
+  opacity: 0.1;
+}
+
+.animate-scroll.right .right-item1 {
+  transform: translateY(50%);
+  opacity: 0.1;
+}
+
+@keyframes shake1 {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-10px);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translateY(-10px);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-10px);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translateY(-10px);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Style for
+
+/* Style for text captions */
+.text {
+    color: #333; /* Text color for better visibility on white background */
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.affiche{
+    width :60%;
+    height : 90vh;
+}
+
+.imagesgif img {
+    width: 100%;
+}
+.dibButtonInscrit {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-self: center;
+}
+    .dibButtonInscrit button {
+        animation: animebutoninscri 3s ease infinite;
+    }
+
+@keyframes animebutoninscri {
+    0% {
+        transform: translateX(0d);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.hrr{
+    color : blue;
+}
+/* Basic styling for the footer */
+.header{
+    position : fixed;
+    z-index : 1;
+    width : 100%;
+    height : min-content;
+}
+footer {
+    background-color: ghostwhite;
+    color: black;
+    font-size: 14px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin : 20px;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-social a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style the social media icons using Font Awesome */
+.social-icon i {
+    font-size: 20px;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+/* Adjust the appearance of links on hover */
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the copyright and policy links */
+.footer-info a {
+    color: black;
+}
+
+    .footer-info a:hover {
+        text-decoration: underline;
+    }
+.bntinscriheader {
+    padding-right: 5px;
+}
+
+.homeDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
+
+.infoincorrectdiv{
+    position: relative;
+}
+
+.cards .card {
+    display: none;
+}
+
+
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.card-body1 {
+    text-align: left;
+    padding-left: 5px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 lightblue;
+}
+
+    .card-body1:hover {
+        box-shadow: 2px 6px 10px 2px lightblue;
+        transition: 0.3s;
+    }
+
+    .card-body1 p {
+        padding-left: 10px;
+    }
+
+    .card-body1 a {
+        padding-left: 10px;
+    }
+
+.cardbottonsdiv
+{
+    display:flex;
+    align-items : center;
+    gap : 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index : 1000;
+    display: none; /* Initially hidden */
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+#scrollToTopBtn.show {
+    display: block;
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#loadingRecaptcha {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #555;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+    #loadingRecaptcha.active {
+        display: block; /* Show when active */
+    }
+
+#ui-container {
+    pointer-events: none; /* Disable user interaction */
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
