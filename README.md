@@ -31,3 +31,6 @@ For more information or to explore GSTMagazin further, visit the official websit
 
 ## Sales Plans
 ![Sales Plans](screnshots/plansventes.png)
+
+## LesArticles
+![The Articles](screnshots/LesArticles.png)
