@@ -11,17 +11,23 @@ User-Friendly Interface: Navigate through the platform with ease, thanks to its 
 For more information or to explore GSTMagazin further, visit the official website: https://gstmag.azurewebsites.net/
 
 
-## Stock
-![Stock](./wwwroot/Images/Stock.webp)
+## Stock Page
+![Stock Page](screnshots/Stock.png)
 
-## Analyse
-![Analyse](./wwwroot/Images/Analyse.webp)
+## Stock with Search
+![Stock with Search](screnshots/StockAvecChercherPar.png)
 
-## Plan Ventes
-![Plan Ventes](./wwwroot/Images/PlanVentes.webp)
+## Stock with Actions
+![Stock with Actions](screnshots/StockwithActions.png)
 
-## Plans Achats
-![Plans Achats](./wwwroot/Images/PlansAchats.webp)
+## Analysis Page
+![Analysis Page](screnshots/Analyse.png)
 
-## Affiches / Les Articles
-![Affiches](./wwwroot/Images/affiches.webp)
+## Analysis with Filter Options
+![Analysis with Filter Options](screnshots/AnalyseFiltrageoptions.png)
+
+## Purchase Plans
+![Purchase Plans](screnshots/PlansAchats.png)
+
+## Sales Plans
+![Sales Plans](screnshots/plansventes.png)
