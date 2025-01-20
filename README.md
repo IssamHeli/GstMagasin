@@ -4,17 +4,19 @@ GSTMagazin est une application web complète conçue pour rationaliser et améli
 
 Note : Ceci est personnalisé en fonction de la demande du client, sans gestion des vendeurs et des commandes. Le magasinier fait ce que le vendeur devrait faire.  
 
-### Technologies Used:
+### Technologies Utilisées:
 
-ASP.NET Core MVC  
-Entity Framework Core (SQL Server)  
-Chart.js  
-jQuery  
-JSON  
-HTML  
-CSS  
-JavaScript  
-Bootstrap  
+
+- **ASP.NET Core MVC**
+- **Entity Framework Core**
+- **(SQL Server)**
+- **Chart.js**
+- **jQuery**
+- **JSON**
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Bootstrap**
 
 
 Pour une démo ou un test, n'hésitez pas à me contacter.
@@ -44,7 +46,10 @@ Visitez le site web ici : https://gstmag.azurewebsites.net/
 ## Sales Plans
 ![Sales Plans](screnshots/plansventes.png)
 
+## LesArticles
+![The Articles](screnshots/LesArticles.png)
 
+--------
 
 GSTMagazin is a comprehensive web application designed to streamline and enhance retail store management. Whether you're operating a small boutique or a large retail chain, GSTMagazin offers intuitive tools to simplify daily operations and boost productivity.
 
@@ -53,7 +58,8 @@ GSTMagazin is a comprehensive web application designed to streamline and enhance
 
 ### Technologies Used:
 - **ASP.NET Core MVC**
-- **Entity Framework Core (SQL Server)**
+- **Entity Framework Core**
+- **(SQL Server)**
 - **Chart.js**
 - **jQuery**
 - **JSON**
@@ -67,5 +73,3 @@ For demo or test, feel free to contact me.
  visit the  website in : https://gstmag.azurewebsites.net/
 
 
-## LesArticles
-![The Articles](screnshots/LesArticles.png)
