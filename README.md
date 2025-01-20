@@ -11,8 +11,9 @@ GSTMagazin is a comprehensive web application designed to streamline and enhance
 - **JavaScript**
 - **Bootstrap**
 
+For demo or test, feel free to contact me.
 
-For more information or to explore GSTMagazin further, visit the official website: https://gstmag.azurewebsites.net/
+ visit the  website in : https://gstmag.azurewebsites.net/
 
 
 ## Stock Page
