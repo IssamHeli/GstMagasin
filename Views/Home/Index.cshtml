@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Gestionner Vos Magasins - GSTMagasin";
 }
 
@@ -135,10 +135,13 @@
     <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Stock"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Plan des achats"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Plan des Ventes"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Stock Avec Chercher Par"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Stock with Actions"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Analyse de Magasin"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Les Articles"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Analyse de magasin avec des options de filtrage "></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Plan des achats"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Plan des Ventes"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Les Articles"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -146,35 +149,63 @@
                 <div class="carousel-caption ">
                     <h5>Stock</h5>
                     <p>Optimisez la gestion de votre stock.</p>
+                    <p>Optimisez la gestion de votre stock grâce à une organisation efficace et des outils adaptés.</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="~/Images/PlansAchats.webp" alt="Plans des achats">
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="~/Images/StockAvecChercherPar.webp" alt="Image représentant le Stock Avec Chercher Par">
                 <div class="carousel-caption ">
-                    <h5>Plans des achats</h5>
-                    <p>Gestion précise des achats en temps réel.</p>
+                    <h5>Stock Avec Options Des  ReCherche </h5>
+                    <p>Recherchez facilement dans vos stocks avec des options avancées et précises.</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="~/Images/StockwithActions.webp" alt="Image représentant le Stock with Actions">
+                <div class="carousel-caption ">
+                    <h5>Stock Avec Actions</h5>
+                    <p>Ajoutez, vendez,analyser , modifiez ou supprimez chaque produit de  vos stocks en toute simplicité grâce à des actions rapides et efficaces.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/Analyse.webp" alt="Image représentant L'Analyse de magasin">
+                <div class="carousel-caption ">
+                    <h5>Analyse de Magasin</h5>
+                    <p>Découvrez des analyses détaillées pour optimiser la performance de votre magasin.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/AnalyseFiltrageoptions.webp" alt="Image représentant L'Analyse de magasin avec des options de filtrage ">
+                <div class="carousel-caption ">
+                    <h5>Analyse de Magasin avec des options de filtrage</h5>
+                    <p>Affinez vos analyses grâce à des options de filtrage avancées pour des résultats précis.</p>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/PlansAchats.webp" alt="Image représentant le Plans des achats">
+                <div class="carousel-caption ">
+                    <h5>Plan des achats</h5>
+                    <p>Organisez vos achats en définissant des plans clairs et bien structurés.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="~/Images/PlanVentes.webp" alt="Plans des achats">
+                <img class="d-block w-100" src="~/Images/plansventes.webp" alt=" Image représentant le Plans des Ventes">
                 <div class="carousel-caption ">
                     <h5>Plan des Ventes</h5>
-                    <p>Visualisez tous vos Ventes en temps réel pour une gestion précise et efficace.</p>
+                    <p>Améliorez vos performances commerciales avec un plan des ventes détaillé et efficace.</p>
 
                 </div>
             </div>
+
             <div class="carousel-item">
-                <img class="d-block w-100" src="~/Images/Analyse.webp" alt="Analyse de magasin">
-                <div class="carousel-caption ">
-                    <h5>Analyse de Magasin</h5>
-                    <p>Visualisez toutes vos données sous forme de graphiques avec des options de filtrage définies et personnalisables.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="~/Images/affiches.webp" alt="Les Articles">
+                <img class="d-block w-100" src="~/Images/LesArticles.webp" alt="Image représentant Les Articles">
                 <div class="carousel-caption ">
                     <h5>les Articles</h5>
                     <p>Définir et enregistrer des articles avec des informations de base pour gagner du temps et éviter de saisir à nouveau les mêmes informations lors de chaque achat.  </p>
+                    <p>Définissez et enregistrez vos articles avec des informations de base pour gagner du temps et éviter la duplication des données.</p>
                 </div>
             </div>
         </div>
@@ -195,51 +226,78 @@
             <!-- Feature 1 -->
             <div class="col-12 text-center">
                 <div class="p-3 border rounded shadow-sm">
-                    <img src="~/Images/Stock.webp" alt="Icone gestion de stock" class="img-fluid border">
+                    <img src="~/Images/Stock.webp" alt="Icône gestion de stock" class="img-fluid border">
                     <h5 class="fw-bold">Gestion de Stock</h5>
-                    <p>Un suivi précis et efficace de vos stocks pour éviter les ruptures ou les excédents.</p>
+                    <p>Optimisez la gestion de votre stock grâce à une organisation efficace et des outils adaptés.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/StockAvecChercherPar.webp" alt="Icône gestion de stock avec chercher par" class="img-fluid border">
+                    <h5 class="fw-bold">Stock Avec Options de Recherche</h5>
+                    <p>Recherchez facilement dans vos stocks avec des options avancées et précises.</p>
                 </div>
             </div>
 
             <!-- Feature 3 -->
             <div class="col-12 text-center">
                 <div class="p-3 border rounded shadow-sm">
-                    <img src="~/Images/PlansAchats.webp" alt="Icone plans d'achats" class="img-fluid border">
-                    <h5 class="fw-bold">Plans des Achats</h5>
-                    <p>Visualisez tous vos achats en temps réel pour une gestion précise et efficace.</p>
+                    <img src="~/Images/StockwithActions.webp" alt="Icône gestion de stock avec actions" class="img-fluid border">
+                    <h5 class="fw-bold">Stock Avec Actions</h5>
+                    <p>Ajoutez, vendez, analyser , modifiez ou supprimez chaque produit de  vos stocks en toute simplicité grâce à des actions rapides et efficaces.</p>
+
                 </div>
             </div>
-
-            <div class="col-12 text-center">
-                <div class="p-3 border rounded shadow-sm">
-                    <img src="~/Images/PlanVentes.webp" alt="Icone plans d'achats" class="img-fluid border">
-                    <h5 class="fw-bold">Plan des Ventes</h5>
-                    <p>Visualisez tous vos Ventes en temps réel pour une gestion précise et efficace.</p>
-                </div>
-            </div>
-
-
 
             <!-- Feature 4 -->
             <div class="col-12 text-center">
                 <div class="p-3 border rounded shadow-sm">
-                    <img src="~/Images/Analyse.webp" alt="Icone analyse de magasin" class="img-fluid border">
+                    <img src="~/Images/Analyse.webp" alt="Icône analyse de magasin" class="img-fluid border">
                     <h5 class="fw-bold">Analyse de Magasin</h5>
-                    <p>Visualisez toutes vos données sous forme de graphiques avec des options de filtrage définies et personnalisables.</p>
+                    <p>Découvrez des analyses détaillées pour optimiser la performance de votre magasin.</p>
                 </div>
             </div>
 
-
-            <!-- Feature 2 -->
+            <!-- Feature 5 -->
             <div class="col-12 text-center">
                 <div class="p-3 border rounded shadow-sm">
-                    <img src="~/Images/affiches.webp" alt="Icone affiches de produits" class="img-fluid border">
-                    <h5 class="fw-bold">les articles</h5>
-                    <p>Définir et enregistrer des articles avec des informations de base pour gagner du temps et éviter de saisir à nouveau les mêmes informations lors de chaque achat.  </p>
+                    <img src="~/Images/AnalyseFiltrageoptions.webp" alt="Icône analyse de magasin avec options de filtrage" class="img-fluid border">
+                    <h5 class="fw-bold">Analyse de Magasin Avec Des Options de Filtrage</h5>
+                    <p>Affinez vos analyses grâce à des options de filtrage avancées pour des résultats précis.</p>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/PlansAchats.webp" alt="Icône plan des achats" class="img-fluid border">
+                    <h5 class="fw-bold">Plan Des Achats</h5>
+                    <p>Organisez vos achats en définissant des plans clairs et bien structurés.</p>
+                </div>
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/plansventes.webp" alt="Icône plan des ventes" class="img-fluid border">
+                    <h5 class="fw-bold">Plan Des Ventes</h5>
+                    <p>Améliorez vos performances commerciales avec un plan des ventes détaillé et efficace.</p>
+                </div>
+            </div>
+
+            <!-- Feature 8 -->
+            <div class="col-12 text-center">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="~/Images/LesArticles.webp" alt="Icône articles" class="img-fluid border">
+                    <h5 class="fw-bold">Les Articles</h5>
+                    <p>Définissez et enregistrez vos articles avec des informations de base pour gagner du temps et éviter la duplication des données.</p>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
