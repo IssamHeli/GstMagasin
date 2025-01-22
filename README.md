@@ -7,7 +7,7 @@ Note : Ceci est personnalisé en fonction de la demande du client, sans gestion 
 ### Technologies Utilisées:
 
 
-- **ASP.NET Core MVC**
+- **ASP.NET Core MVC** ![ASP.NET Core Mvc ](https://img.shields.io/badge/framework-ASP.NET%20Core-blue.svg)
 - **Entity Framework Core**
 - **(SQL Server)**
 - **Chart.js**
