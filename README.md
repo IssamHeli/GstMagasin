@@ -7,16 +7,16 @@ Note : Ceci est personnalisé en fonction de la demande du client, sans gestion 
 ### Technologies Utilisées:
 
 
-- ASP.NET Core MVC         [Framework: ASP.NET Core]
-- Entity Framework Core     [ORM: Entity Framework Core]
-- SQL Server               [Database: SQL Server]
-- Chart.js                 [Visualization: Chart.js]
-- jQuery                   [Library: jQuery]
-- JSON                     [Data Format: JSON]
-- HTML                     [Markup: HTML]
-- CSS                      [Style: CSS]
-- JavaScript               [Language: JavaScript]
-- Bootstrap                [Framework: Bootstrap]
+- ![ASP.NET Core](https://img.shields.io/badge/Framework-ASP.NET%20Core-blue.svg) **ASP.NET Core MVC**  
+- ![Entity Framework Core](https://img.shields.io/badge/ORM-Entity%20Framework%20Core-green.svg) **Entity Framework Core**  
+- ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red.svg) **SQL Server**  
+- ![Chart.js](https://img.shields.io/badge/Visualization-Chart.js-orange.svg) **Chart.js**  
+- ![jQuery](https://img.shields.io/badge/Library-jQuery-lightgrey.svg) **jQuery**  
+- ![JSON](https://img.shields.io/badge/Data-JSON-yellow.svg) **JSON**  
+- ![HTML](https://img.shields.io/badge/Markup-HTML-blue.svg) **HTML**  
+- ![CSS](https://img.shields.io/badge/Style-CSS-blueviolet.svg) **CSS**  
+- ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellowgreen.svg) **JavaScript**  
+- ![Bootstrap](https://img.shields.io/badge/Framework-Bootstrap-purple.svg) **Bootstrap**  
 
 
 
