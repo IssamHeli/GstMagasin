@@ -7,16 +7,18 @@ Note : Ceci est personnalisé en fonction de la demande du client, sans gestion 
 ### Technologies Utilisées:
 
 
-- ![ASP.NET Core](https://img.shields.io/badge/Framework-ASP.NET%20Core-blue.svg) **ASP.NET Core MVC**  
-- ![Entity Framework Core](https://img.shields.io/badge/ORM-Entity%20Framework%20Core-green.svg) **Entity Framework Core**  
-- ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red.svg) **SQL Server**  
-- ![Chart.js](https://img.shields.io/badge/Visualization-Chart.js-orange.svg) **Chart.js**  
-- ![jQuery](https://img.shields.io/badge/Library-jQuery-lightgrey.svg) **jQuery**  
-- ![JSON](https://img.shields.io/badge/Data-JSON-yellow.svg) **JSON**  
-- ![HTML](https://img.shields.io/badge/Markup-HTML-blue.svg) **HTML**  
-- ![CSS](https://img.shields.io/badge/Style-CSS-blueviolet.svg) **CSS**  
-- ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellowgreen.svg) **JavaScript**  
-- ![Bootstrap](https://img.shields.io/badge/Framework-Bootstrap-purple.svg) **Bootstrap**  
+- ![C#](https://img.shields.io/badge/Language-C%23-239120.svg) 
+- ![ASP.NET Core](https://img.shields.io/badge/Framework-ASP.NET%20Core-blue.svg) 
+- ![Entity Framework Core](https://img.shields.io/badge/ORM-Entity%20Framework%20Core-green.svg) 
+- ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red.svg)  
+- ![Chart.js](https://img.shields.io/badge/Visualization-Chart.js-orange.svg) 
+- ![jQuery](https://img.shields.io/badge/Library-jQuery-lightgrey.svg) 
+- ![JSON](https://img.shields.io/badge/Data-JSON-yellow.svg)   
+- ![HTML](https://img.shields.io/badge/Markup-HTML-blue.svg) 
+- ![CSS](https://img.shields.io/badge/Style-CSS-blueviolet.svg) 
+- ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellowgreen.svg) 
+- ![Bootstrap](https://img.shields.io/badge/Framework-Bootstrap-purple.svg) 
+
 
 
 
