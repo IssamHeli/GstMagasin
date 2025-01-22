@@ -7,16 +7,17 @@ Note : Ceci est personnalisé en fonction de la demande du client, sans gestion 
 ### Technologies Utilisées:
 
 
-- **ASP.NET Core MVC** ![ASP.NET Core Mvc ](https://img.shields.io/badge/framework-ASP.NET%20Core-blue.svg)
-- **Entity Framework Core**
-- **(SQL Server)**
-- **Chart.js**
-- **jQuery**
-- **JSON**
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **Bootstrap**
+- ASP.NET Core MVC         [Framework: ASP.NET Core]
+- Entity Framework Core     [ORM: Entity Framework Core]
+- SQL Server               [Database: SQL Server]
+- Chart.js                 [Visualization: Chart.js]
+- jQuery                   [Library: jQuery]
+- JSON                     [Data Format: JSON]
+- HTML                     [Markup: HTML]
+- CSS                      [Style: CSS]
+- JavaScript               [Language: JavaScript]
+- Bootstrap                [Framework: Bootstrap]
+
 
 
 Pour une démo ou un test, n'hésitez pas à me contacter.
