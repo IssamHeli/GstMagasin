@@ -59,17 +59,19 @@ GSTMagazin is a comprehensive web application designed to streamline and enhance
 ## Note : This is customized based on the client's request, without seller and order handling. The storekeeper does what the seller should do. 
 
 
-### Technologies Used:
-- **ASP.NET Core MVC**
-- **Entity Framework Core**
-- **(SQL Server)**
-- **Chart.js**
-- **jQuery**
-- **JSON**
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **Bootstrap**
+### Technologies Used:  
+
+- ![C#](https://img.shields.io/badge/Language-C%23-239120.svg) 
+- ![ASP.NET Core](https://img.shields.io/badge/Framework-ASP.NET%20Core-blue.svg) 
+- ![Entity Framework Core](https://img.shields.io/badge/ORM-Entity%20Framework%20Core-green.svg) 
+- ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red.svg)  
+- ![Chart.js](https://img.shields.io/badge/Visualization-Chart.js-orange.svg) 
+- ![jQuery](https://img.shields.io/badge/Library-jQuery-lightgrey.svg) 
+- ![JSON](https://img.shields.io/badge/Data-JSON-yellow.svg)   
+- ![HTML](https://img.shields.io/badge/Markup-HTML-blue.svg) 
+- ![CSS](https://img.shields.io/badge/Style-CSS-blueviolet.svg) 
+- ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellowgreen.svg) 
+- ![Bootstrap](https://img.shields.io/badge/Framework-Bootstrap-purple.svg) 
 
 For demo or test, feel free to contact me.
 
