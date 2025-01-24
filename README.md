@@ -48,7 +48,7 @@ dotnet ef database update
 ```
 
 ## 3. Add Initial Directeur  Information
-Log in to your Microsoft SQL Server and manually add an initial admin record to the database. Use a strong username and password for security.
+Log in to your Microsoft SQL Server and manually add an initial directeur record to the database. Use a strong username and password for security.
 
 ## 4. Build and Run the Project
 Run the following commands in your terminal to build and launch the project:
