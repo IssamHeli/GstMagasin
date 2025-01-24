@@ -27,6 +27,42 @@ Pour une démo ou un test, n'hésitez pas à me contacter.
 Visitez le site web ici : https://gstmag.azurewebsites.net/
 
 -----------
+# Project Setup Instructions
+
+## 1. Configure the Database Connection String
+Update the connection string in the `appsettings.json` file to match your SQL Server instance:
+
+```json
+"ConnectionStrings": {
+  "StringChainCnx": "Server=tcp:{your server database},1433;Initial Catalog={your database};Persist Security Info=False;User ID={Your User Id};Password={your password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+}
+```
+
+*Note: Make sure you have all necessary NuGet packages installed and the correct SDK version. You can verify this in the `Technexa.csproj` file.*
+
+## 2. Apply Database Migrations
+Open a terminal in your project folder and run the following command to apply migrations and create the database schema:
+
+```bash
+dotnet ef database update
+```
+
+## 3. Add Initial Directeur  Information
+Log in to your Microsoft SQL Server and manually add an initial admin record to the database. Use a strong username and password for security.
+
+## 4. Build and Run the Project
+Run the following commands in your terminal to build and launch the project:
+
+```bash
+dotnet build
+dotnet run
+```
+
+
+
+
+_______
+
 
 ## Page de Stock
 ![Stock Page](screnshots/Stock.png)
